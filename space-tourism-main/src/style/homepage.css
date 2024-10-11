@@ -1,0 +1,389 @@
+/* Global Reset */
+.section{
+  height:300vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure full height for html and body */
+  html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+     /* Set the background color of the webpage */
+  }
+  
+  /* Style for fixed navbar */
+  
+  
+  /* Style for the hero section */
+  .hero-section {
+    position: relative; /* Relative positioning for child elements */
+    width: 100vw; /* Full viewport width */
+    height: 80vh; /* Full viewport height minus the height of the navbar */
+    overflow: hidden; /* Prevents scrolling if the content overflows */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    background-color: #0460F5; /* Set background color for hero section */
+    top: 0; /* Push the hero section down to appear just below the navbar */
+    left: 0; /* Align hero section to the left edge */
+  }
+  
+  /* Style for the hero image */
+  .hero-image {
+    position: absolute; /* Position the image absolutely within the hero section */
+    top: 0; /* Align image to the top */
+    left: 45vw; /* Align image to the left */
+    width:750px; /* Full viewport width */
+    height: 500px; /* Full height of the hero section */
+    display:flex;
+    justify-content: right;
+    
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block; /* Block element to handle layout correctly */
+    margin: 0; /* Ensure no margins are applied */
+    padding: 0; /* Ensure no padding is applied */
+  }
+  .hero-image{
+    animation-name:floating;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes floating{
+    0%{
+      transform:translate(0,0px);
+
+    }
+    50%{
+      transform:translate(0,10px);
+    }
+    100%{
+      transform:translate(0,-0px);
+    }
+  }
+  
+  /* Style for text within hero section */
+  .home-text {
+    position: absolute; /* Position text absolutely within hero section */
+    top: 1%; /* Adjust this value to move the text up or down */
+    left: 3vw; /* Align text to the left with some padding from the edge */
+    transform: translateY(-20%); /* Adjust the vertical alignment */
+    color: white; /* Text color for better contrast on image */
+    text-align: left; /* Align text to the left */
+    z-index: 1; /* Ensure text is above the hero image */
+   
+    width: 90%; /* Ensure text does not overflow */
+  }
+  
+  /* Style for heading text */
+  #heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #D0D6F9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    font-weight: 60px;
+    margin: 0; /* Ensure no extra margin is added */
+  }
+  
+  /* Style for h3 element */
+  h3 {
+    letter-spacing: 4px;
+    font-size: 100px;
+    color:#FAA113;
+    line-height: 200px;
+    text-transform: uppercase;
+    font-weight: 40px;
+    font-family: fantasy;
+    margin: 20px 0 10px; /* Top and bottom margin for spacing */
+   /* Optional: Set a color for h3 */
+  }
+  
+  /* Style for paragraph text */
+  
+  .head{
+    position:relative;
+    color: aliceblue;
+    font-family: merienda;
+    font-style: merienda;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    
+  }
+    
+.head h1{
+  position:relative;
+color: #FAA113;
+font-size:50px;
+font-family: 'Barlow Condensed', sans-serif;
+font-weight: 50px;
+text-align: center;
+}
+
+.image-row{
+  position:relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+.image-item{
+    text-align: center;
+}
+.circle-img{
+  position:relative;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 60px;
+    background-color: #ffffff;
+    
+}
+.circle-img1{
+  height: 175px;
+  width: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+
+}
+.img-text{
+  text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left:80px;
+    
+    text-decoration: none;
+}
+.tech-image{
+    color: aliceblue;
+    text-decoration: none;
+    
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tech-image a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px rgba(255,255,255,0.7);
+}
+
+.circle-img:hover{
+ transform:scale(1.2);
+ transition-duration: 0.5s;
+}
+
+.circle-img1:hover{
+  transform:scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.about {
+  height: 60vh; /* Sets the height of the section to 60% of the viewport height */
+  width: 210vh; /* Sets the width of the section */
+  display: block; /* Ensures the section is a block element */
+  background-color: #000000 ; /* Dark blue background color */
+  color: #ffffff; /* White text color for contrast */
+}
+.abt-text{
+  color:#FAA113;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.abt-textpara{
+  color: #eeedff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+.work-img{
+  float: right;
+  margin-top: -73vh;
+  width:60%;
+ 
+}.endose-page {
+  height: 100vh;
+  width: 100%;
+  max-width: 1000px; /* Set a max-width for better control */
+  margin: 0 auto; /* Center the page container */
+  position: relative; /* Relative positioning for internal alignment */
+}
+
+.e-head {
+  color:#FAA113 ;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 50px;
+  font-weight:5px;
+  margin-top: 50px; /* Adjusted margin */
+  text-align: center; /* Center text */
+}
+
+.endorsement-container {
+  display: flex;
+  justify-content: space-between; /* Space between endorsements */
+  align-items: center; /* Center items vertically */
+  margin-top: 30px;
+  gap: 20px; /* Add gap for spacing between items */
+  padding: 20px; /* Padding around the container */
+  background-color: rgba(255, 255, 255, 0.1); /* Make the container transparent with a slight white tint */
+  backdrop-filter: blur(10px); /* Add a blur effect for a glass-like appearance */
+  border-radius: 15px; /* Round the edges of the container */
+}
+
+.endorsement-box {
+  width: 45%; /* Adjust to fit container width */
+  max-width: 400px; /* Limit width for better control */
+  height: 500px; /* Adjust height dynamically based on content */
+  background-color: #e6f4f1; /* Add transparency to the box background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Increase padding for better spacing */
+  border-radius: 15px;
+  margin: 0 auto; /* Center each box horizontally */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect transitions */
+}
+
+.endorsement-box:hover {
+  transform: translateY(-10px); /* Lift box on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.endorsement-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the area */
+  margin-bottom: 15px; /* Space between image and text */
+  border: 5px solid #fff; /* Add a white border around the image */
+}
+
+.endorsement-text {
+  color:#073175;
+  font-size: 20px;
+  
+  text-align:center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 10px;
+  white-space: nowrap; /* Keep text on a single line */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.endorsement-description {
+  color: rgb(26, 25, 25);
+  font-size: 18px; /* Slightly smaller text for better readability */
+  margin-top: 10px; /* Proper spacing */
+  margin-bottom: 20px;
+  text-align: center; /* Center text */
+  white-space: normal; /* Allow text wrapping */
+  line-height: 1.5; /* Add line height for readability */
+}
+/* CSS file: src/style/endorsement.css */
+
+/* Ensure the container is positioned correctly */
+.endose-page {
+  position: relative; /* Allow absolute positioning of child elements */
+}
+
+/* Common styles for arrows */
+.arrow-1, .arrow-2 {
+  position: absolute; /* Position relative to .endose-page */
+  top: 50%; /* Center vertically within .endose-page */
+  transform: translateY(-50%); /* Adjust for exact vertical centering */
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  cursor: pointer; /* Change cursor to pointer for clickability */
+  z-index: 10; /* Ensure arrows are above other content */
+}
+
+/* Position left arrow */
+.arrow-1 {
+  
+  left: 10px; /* Position left arrow from the left edge */
+}
+
+/* Position right arrow */
+.arrow-2 {
+  right: 10px; /* Position right arrow from the right edge */
+ top:323px;
+}
+
+/* Optional: Ensure images inside arrows are centered */
+.arrow-1 img, .arrow-2 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* CSS file: src/style/contact.css */
+
+/* Container for the footer contact section */
+
+.contact-page {
+   /* Mint-green with transparency for glass effect */
+   /* Dark blue text for contrast */
+  padding: 2px; /* Padding around the content */
+  text-align: center; /* Center-align text and elements */
+   /* Light white border for glass effect */
+  position: relative; /* Position relative for any child absolute positioning */
+  backdrop-filter: blur(100px); /* Blur effect to enhance glass-like appearance */
+  -webkit-backdrop-filter: blur(10000px); /* Safari support for backdrop-filter */
+  border-radius: 15px; /* Rounded corners for the glass effect */
+ top:50px;
+ 
+  box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading styling for footer */
+.contact-heading {
+  font-family: 'Barlow Condensed', sans-serif; /* Modern, condensed font */
+  font-size: 2em; /* Smaller font size */
+  margin-bottom: 2px; /* Space below heading */
+  color: #e1e9f5 ; /* Dark blue for heading */
+  text-align:center;
+
+}
+
+/* Social media links container */
+.social-media-links {
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center items horizontally */
+  gap: 15px; /* Space between icons */
+}
+
+/* Social media link styling */
+.social-link {
+  display: inline-block; /* Inline-block for margin and alignment */
+}
+
+/* Social media icon styling */
+.social-icon {
+  width: 40px; /* Icon size */
+  height: 40px; /* Icon size */
+  border-radius: 50%; /* Round icons */
+  object-fit: cover; /* Ensure icons fit within their containers */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for icons */
+.social-icon:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon */
+  
+}
+
+
