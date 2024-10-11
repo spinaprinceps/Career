@@ -1,0 +1,114 @@
+/* Wrapper for the entire content */
+.content-wrapper {
+    width: 100%;
+    padding: 20px;
+     /* Background color for the wrapper */
+}
+
+/* Interest Section Styles */
+.interest-section {
+    margin-bottom: 30px;
+}
+
+.heading-interest {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; /* Dark blue color */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.interest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.interest-card {
+    width: calc(25% - 20px);
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.interest-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+}
+
+.interest-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.interest-text {
+    font-size: 23spx;
+    margin-top: 15px;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Separator */
+.separator {
+    border: 0;
+    border-top: 3px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Video Section Styles */
+.video-section {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+.video-box {
+    flex: 1 0 calc(20% - 20px);
+    background-color: #ffffff; /* White background for video boxes */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.video-title {
+    font-size: 20px;
+    color: #073175; /* Dark blue color */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Resource and Quiz Section Styles */
+.resource-quiz-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.resource-box, .quiz-box {
+    width: calc(50% - 20px);
+    background-color: #d4ddee; /* White background for boxes */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    height:fit-content;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.resource-title, .quiz-title {
+    font-size: 28px;
+    text-align:center;
+    left :30px;
+    color: #6e0620; /* Bold red color */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
