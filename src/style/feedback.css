@@ -1,0 +1,110 @@
+.feedback-container {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: flex-start;
+    padding: 20px;
+    font-size:23px;
+    background-color: #ffffff;
+    gap: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-image {
+    width:50%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .feedback-form {
+    flex: 1;
+    font-size:18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 600px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .feedback-form h2 {
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #303C6C;
+    font-size:22px;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-form hr {
+    border: 0;
+    height: 1px;
+    font-size:22px;
+    background: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form .nam {
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #464555;
+  }
+  
+  .feedback-form .row {
+    display: flex;
+    font-size:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form .form-control {
+    padding: 10px;
+    font-size:18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .feedback-form .but {
+    margin-bottom: 20px;
+    font-size:20px;
+    color: #464555;
+  }
+  
+  .feedback-form .form-check-label {
+    margin-right: 18px;
+    font-size:20px;
+    color: #303C6C;
+  }
+  
+  .feedback-form .do {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #464555;
+  }
+  
+  .feedback-form .form-floating {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form textarea {
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .feedback-form button {
+    background-color: #303C6C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #464555;
+  }
+  
