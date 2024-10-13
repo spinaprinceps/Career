@@ -21,6 +21,7 @@ export default function App() {
       <div className="App">
         <Nav />
         <Routes>
+        <Route path="/" element={<Navigate to="/space-tourism/" replace />} />
           <Route exact path='/space-tourism/' element={ <Homepage /> }></Route>
           <Route exact path='/destination' element={ <Destination /> }></Route>
           <Route path="/car" element={<Car />}></Route> 
