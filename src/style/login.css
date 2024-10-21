@@ -114,3 +114,14 @@
     flex-direction: column;
     gap:10px;
 }
+@media (max-width:767px) {
+    .login-container {
+        width: 293px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-left: 40px;
+        margin-top: 50px;
+        margin-bottom: 38px;
+    }    
+}
