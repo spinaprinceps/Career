@@ -73,4 +73,28 @@
     background-image: url('../assets/cam/gamer_set_4.jpg');
     background-size: cover;
   }
-  
+  @media (max-width: 767px){
+    .tech {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 3.5rem;
+      color: white;
+      margin-bottom: -10px;
+      margin-top: -5px;
+  }
+  .subdiv h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 378px;
+    height: 106px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 36px 20px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+  }
