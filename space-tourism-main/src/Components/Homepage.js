@@ -21,7 +21,7 @@ import OnlineCourses from "./OnlineCourses";
 import insta from "../assets/home/instagram-2-1-logo-svgrepo-com.svg"
 import twitter from "../assets/home/twitter-svgrepo-com.svg"
 import linkedin from "../assets/home/linkedin-icon-2-logo-svgrepo-com.svg"
-
+import Slider from "./Slider"
 export default function Homepage() {
   const navigate = useNavigate();
   return (
@@ -91,40 +91,7 @@ export default function Homepage() {
   <img src={about} alt="work" className="work-img" />
 
  </div>
- <div className="endose-page">
-  <p className="e-head">ENDORSEMENT</p>
-  <div className="endorsement-container">
-  <img src={left} alt="lit" className="arrow-1" />
-    <div className="endorsement-box box1">
-      <img src={a2} alt="Description 1" className="endorsement-image" />
-      <p className="endorsement-text">Ananya Sharma</p>
-      <p className="endorsement-description">
-      Joining this platform transformed my networking <br />
-  experience, providing invaluable connections <br />
-  that helped me grow professionally.
-      </p>
-    </div>
-    <div className="endorsement-box box2">
-      <img src={a1} alt="Description 2" className="endorsement-image" />
-      <p className="endorsement-text">Akash Rao</p>
-      <p className="endorsement-description">
-      My confidence has soared thanks to peer feedback.<br />
-  I feel more assured in my career, knowing <br />
-  I have a supportive community.
-      </p>
-    </div>
-    <div className="endorsement-box box3">
-      <img src={a3} alt="Description 3" className="endorsement-image" />
-      <p className="endorsement-text">Ajay Gupta</p>
-      <p className="endorsement-description">
-      This platform has enriched my learning, <br />
-  offering insights and advice that drive <br />
-  my continuous growth.
-      </p>
-      &nbsp;&nbsp;&nbsp;</div>
-  </div>
-  <img src={right} alt="lit" className="arrow-2" />
-</div>
+ <Slider/> 
 
 <div className="contact-page">
   <h1 className="contact-heading">Contact Us</h1>
