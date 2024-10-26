@@ -14,6 +14,8 @@ import Eskill from './Components/Eskill';
 import Fskill from './Components/Fskill';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
+import TestimonialSlider from "./Components/Testimonials";
+
 // App Component
 export default function App() {
   return (
@@ -23,6 +25,7 @@ export default function App() {
         <Routes>
           <Route exact path='/space-tourism/' element={ <Homepage /> }></Route>
           <Route exact path='/destination' element={ <Destination /> }></Route>
+      <Route exact path='/Testimonials' element= {<TestimonialSlider/>}></Route>
           <Route path="/car" element={<Car />}></Route> 
           <Route path="/career" element={<Career />}></Route> 
           <Route exact path='/mentorship' element={ <Mentorship /> }></Route>
