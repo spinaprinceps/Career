@@ -1,0 +1,79 @@
+/* Center the signup-wrapper in the viewport */
+.signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for vertical centering */
+}
+h1{
+    color:black;
+}
+/* Style the signup-container */
+.signup-container {
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #D2FDFF;
+    background-color: white;
+    width: 320px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+}
+
+/* Style for the form inputs and selects */
+.signup-container form select,
+.signup-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* General button styling */
+.signup-container button {
+    background-color: #303C6C;
+    color: white;
+    border-radius: 5px;
+    width: 100%; /* Full width within the container */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add spacing between buttons */
+}
+
+.signup-container button:hover {
+    background-color: #2b345e; /* Darker shade for hover effect */
+}
+
+/* Style for social media buttons */
+.signup-container .facebook-signup {
+    background-color: #3b5998;
+}
+
+.signup-container .google-signup {
+    background-color: #db4437;
+}
+
+/* Style for the text link */
+.signup-container a {
+    text-decoration: none;
+    color: #303C6C;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Adjustments for the main heading */
+.signup-container .main {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}

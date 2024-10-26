@@ -1,0 +1,146 @@
+/* Font and Body Settings */
+.wp {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for the entire skills section */
+.sk-wp {
+    padding: 30px;
+    background-color: #ffffff; /* Elegant, warm background */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.sk-hd {
+    text-align: center;
+    
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color:#ffffff;
+    border-radius: 10px;
+    color:#0460f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sk-hd h1 {
+    font-size: 40px;
+    margin: 0;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.sk-hd p {
+    font-size: 20px;
+    margin-top: 12px;
+    font-weight: 300;
+}
+
+/* Section Styles */
+.sk-sec, .tl-sec, .px-sec, .ss-sec, .rs-sec, .ft-sec {
+    margin-bottom: 50px;
+}
+
+/* Skill Groups */
+.sk-gr, .ss-gr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.sk-crd, .ss-crd {
+    flex: 1 1 calc(25% - 20px);
+    background: linear-gradient(135deg, #528c8a, #148582);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sk-crd:hover, .ss-crd:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.sk-crd h3, .ss-crd h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.sk-crd p, .ss-crd p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Tools Section */
+.tl-sec {
+    text-align: center;
+}
+
+.tl-crsl {
+    display: flex;
+    overflow-x: auto;
+    padding: 15px;
+    gap: 20px;
+}
+
+.tl-itm {
+    min-width: 160px;
+    padding: 25px;
+    background-color: #148582;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tl-itm:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Practical Experience Section */
+.px-sec, .rs-sec, .ft-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.px-crd, .rs-crd, .ft-crd {
+    flex: 1 1 calc(50% - 20px);
+    background: linear-gradient(135deg, #0460f5, #148582);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.px-crd:hover, .rs-crd:hover, .ft-crd:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.px-crd h3, .rs-crd h3, .ft-crd h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.px-crd p, .rs-crd p, .ft-crd p {
+    font-size: 16px;
+    font-weight: 300;
+}

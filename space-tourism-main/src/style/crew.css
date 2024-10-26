@@ -1,0 +1,88 @@
+/* ========= Hero Section for Crew ========== */
+.apple {
+    left: 20px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align container items to the start (left) */
+    justify-content: center; /* Center content vertically in the section */
+    height: 90vh; /* Set the section height */
+    padding: 0 5%; /* Add some padding for spacing */
+    background-color: #0460F5;;
+}
+
+/* Crew */
+.crew {
+    display: flex;
+    align-items: flex-start; /* Align items at the top to keep the text and image aligned */
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row; /* Align text and image side by side */
+}
+
+/* Crew Text */
+.crew-text {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+    padding-right: 0rem; /* Adds space between text and image */
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+}
+.crew-text span {
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 40px; /* Increased font size for paragraph text */
+    line-height: 64px; /* Adjust line height for better spacing */
+    padding: 10px 0 20px;
+}
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2px 0;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+/* Pagination */
+.pagination-crew {
+    display: flex;
+    justify-content: flex-start; /* Align pagination dots to the start (left) */
+    margin-top: 2px;
+    margin-left: 0; /* Align with text */
+    width: 100%; /* Ensure pagination spans the full width under the text */
+}
+.pagination-crew span {
+    color: #FFFFFF;
+    opacity: 0.17;
+    font-size:8rem; /* Adjust the size of the dots */
+    cursor: pointer;
+    margin:0;
+    
+    margin: 0 5px; /* Add spacing between the dots */
+}
+.pagination-crew span:hover {
+    opacity: 0.5;
+}
+.pagination-crew span.active-dot {
+    color: white;
+    opacity: 1;
+}
+
+/* Crew Image */
+.crew img {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+    height: auto;
+    min-height: 40vh;
+    max-height: 64vh;
+    margin-top: 0; /* Remove top margin to align with the hero section */
+    object-fit: cover;
+}
+
+
+
+
